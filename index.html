@@ -15,39 +15,35 @@
 <body>
     <div id="calculator">
         <div id="display">
-            <div class="screen" id="last-operation-screen">
-                Hello
-            </div>
-            <div class="screen" id="current-operation-screen">
-                Hello
+            <div class="screen">
+                <p id="lastOperation" class="text"></p>
+                <p id="currentOperation" class="text"></p>
             </div>
         </div>
         <div class="buttons">
-            <div id="row1">
-                <button id="7" onclick="">7</button>
-                <button id="8" onclick="">8</button>
-                <button id="9" onclick="">9</button>
-                <button id="del" onclick="">Del</button>
+
+                <button id="clear" onclick="clearText()">AC</button>
+                <button id="delete" onclick="backspace()">Del</button>
+                <button id="divide" onclick="selectOp('/')">/</button>
+                <button id="multiply" onclick="selectOp('*')">*</button>
+
+                <button id="seven" onclick="press('7')">7</button>
+                <button id="eight" onclick="press('8')">8</button>
+                <button id="nine" onclick="press('9')">9</button>
+                <button id="subtract" onclick="selectOp('-')">-</button>
+                
+                <button id="four" onclick="press('3')">4</button>
+                <button id="five" onclick="press('5')">5</button>
+                <button id="6" onclick="press('6')">6</button>
+                <button id="add" onclick="selectOp('+')">+</button>
+                
+                <button id="one" onclick="press('1')">1</button>
+                <button id="two" onclick="press('2')">2</button>
+                <button id="three" onclick="press('3')">3</button>
+                <button id="equal" onclick="selectOp('=')">=</button>
+                
+                <button id="zero" onclick="press('0')">0</button>
             </div>
-            <div id="row2">
-                <button id="4" onclick="">4</button>
-                <button id="5" onclick="">5</button>
-                <button id="6" onclick="">6</button>
-                <button id="+" onclick="">+</button>
-            </div>
-            <div id="row3">
-                <button id="1" onclick="">1</button>
-                <button id="3" onclick="">3</button>
-                <button id="-" onclick="">-</button>
-                <button id="2" onclick="">2</button>
-            </div>
-            <div id="row4">
-                <button id="0" onclick="">0</button>
-                <button id="*" onclick="">*</button>
-                <button id="/" onclick="">/</button>
-                <button id="=" onclick="">=</button>
-            </div>
-        </div>
     </div>
 </body>
 

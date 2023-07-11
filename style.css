@@ -16,39 +16,48 @@ body {
     margin-top: 100px;
     padding: 20px;
     background-color: #999999;
-    border-radius: 8px;
-}
-
-#display {
-    display: flex;
-    flex-direction: column;
-    width: 416px;
+    border-radius: 24px;
+    width: 462px;
+    min-width: 462px;
+    align-items: stretch;
 }
 
 .screen {
+    box-sizing: border-box;
     border: 2px;
     border-style: solid;
     background-color: #b0cfeb;
-    padding: 5px;
     border-radius: 8px;
     margin: 2px;
-
+    margin-bottom: 20px;
+    padding: 8px;
+    height: 80px;
+    position: relative;
+    
 }
 
-#last-operation-screen {
-    height: 60px;
-    font-size: 16px;
+#lastOperation{
+    font-size: 20px;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    padding: 0;
+    margin: 0;
 }
 
-#current-operation-screen {
-    height: 100px;
-    font-size: 24px;
-
-
+#currentOperation{
+    position: absolute;
+    bottom: 2px;
+    right: 8px;
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
 }
 
 .buttons {
     font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .buttons button {
@@ -60,4 +69,5 @@ body {
     border-color: black;
     border-radius: 8px;
     margin: 2px;
+    padding: 0;
 }
